@@ -24,8 +24,8 @@ def login_to_site(page):
     page.goto("https://database.thesisdriven.com/real-estate-markets")
     page.click("text='Log In'")
     page.click("body > div.bubble-element.Page.baTaHlt.main-page.bubble-r-container.flex.column > div > div > div > button")
-    page.fill('body > div.bubble-element.Page.baTaHlt.main-page.bubble-r-container.flex.column > div > div > div > div.bubble-element.Group.baTaJaQaL.bubble-r-container.flex.column > input', 'XXXXXXXX')
-    page.fill('body > div.bubble-element.Page.baTaHlt.main-page.bubble-r-container.flex.column > div > div > div > div.bubble-element.Group.baTaJaQaR.bubble-r-container.flex.column > input', 'XXXXXXXX')
+    page.fill('body > div.bubble-element.Page.baTaHlt.main-page.bubble-r-container.flex.column > div > div > div > div.bubble-element.Group.baTaJaQaL.bubble-r-container.flex.column > input', 'YOUR_EMAIL_HERE')
+    page.fill('body > div.bubble-element.Page.baTaHlt.main-page.bubble-r-container.flex.column > div > div > div > div.bubble-element.Group.baTaJaQaR.bubble-r-container.flex.column > input', 'YOUR_PASSWORD_HERE')
     page.wait_for_timeout(5000)
     page.wait_for_url("https://database.thesisdriven.com")
 
